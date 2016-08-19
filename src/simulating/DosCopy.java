@@ -18,35 +18,17 @@ import simulating.model.impl.DosFolderImpl;
 
 /**
  * DOS copy command simulated in Java.
- * + REQ01: The command copies computer files from one directory to another.
- * + REQ02: The destination defaults to the current working directory.
- * + REQ03: If more than one source file is indicated, the destination must be a directory.
+ * + The command copies computer files from one directory to another.
+ * + The destination defaults to the current working directory.
+ * + If more than one source file is indicated, the destination must be a directory.
+ * 
+ * Behaviour described at:
+ * @see https://en.wikipedia.org/wiki/Copy_(command)
  * 
  * Examples of usage:
  * + java executable.DosCopy ThisIsAFile.txt FolderB
  * + java executable.DosCopy ThisIsAFile.txt ThisIsADuplicatedFile.txt
  * + java executable.DosCopy ThisIsAFile.txt ThisIsASecondFile.txt FolderB
- * 
- * TODO Improvements:
- * - DosCopyCommand implementing an interface
- * - DosCopy should explicitly implement a dependence on the file system (FileSystemHelper) that doesn't happen in DosCopyDouble
- * - Don't use the folder string from the args as a folder id (the only folder id is the folder path)
- * - performDuplications() tested separately
- * - Introduce Path
- * - Logger
- * - Allow relative paths
- * - Clean up
- * + Allow CLI modifiers in args: /Y, ETC!!!!!!!!!!!!!!!!!!!!!!!!!!!
- * + Remove TODOs
- * + Eclemma
- * + Check error/exception execution flows
- * + SOLID
- * + Javadoc
- * + No magic numbers/strings
- * + DIP
- * 
- * Behaviour described at:
- * @see https://en.wikipedia.org/wiki/Copy_(command)
  * 
  * @author Santiago Nuñez
  * @date 17/08/2016 
